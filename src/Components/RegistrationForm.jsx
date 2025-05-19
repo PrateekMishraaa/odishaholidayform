@@ -35,7 +35,7 @@ const GetStartedForm = () => {
       {/* Fixed Logo at Top Center */}
      {/* Fixed Logo at Top Center */}
 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-  <img src={Logo} alt="Logo" className="h-32 sm:h-20 object-contain" />
+  <img src={Logo} alt="Logo" className="h-32 sm:h-24 object-contain" />
 </div>
 
 
