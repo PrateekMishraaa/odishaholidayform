@@ -143,7 +143,7 @@ const GetStartedForm = () => {
   
       </div>
     </div>
- <div className="fixed bottom-6 left-10 z-30">
+ <div className="fixed  bottom-2 z-30">
   <a
     href="https://wa.me/919540802061" // Replace with your WhatsApp number
     target="_blank"
