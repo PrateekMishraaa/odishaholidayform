@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from "../assets/logo.jpg";
+import Image from "../assets/jagannath.png"; // background image
 
 const GetStartedForm = () => {
   const [formData, setFormData] = useState({
@@ -24,14 +25,17 @@ const GetStartedForm = () => {
   };
 
   return (
-   <>
-   {/* <img src={Logo} alt="Logo" className="relative bottom-20 h-20 " /> */}
-    <div className="relative min-h-screen bg-white flex items-center justify-center overflow-hidden px-4 py-8">
-      
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative px-4 py-8"
+      style={{ backgroundImage: `url(${Image})` }}
+    >
+      {/* Overlay to slightly darken background */}
+      <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
+
       {/* Form Container */}
       <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-8 relative">
         <img src={Logo} alt="Logo" className="mx-auto mb-4 w-32" />
-        
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -54,7 +58,7 @@ const GetStartedForm = () => {
               placeholder="Enter a valid email address"
               value={formData.email}
               onChange={handleChange}
-   className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
+              className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
               required
             />
           </div>
@@ -67,7 +71,7 @@ const GetStartedForm = () => {
               placeholder="Enter your mobile number"
               value={formData.mobile}
               onChange={handleChange}
-                 className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
+              className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
               required
             />
           </div>
@@ -80,7 +84,7 @@ const GetStartedForm = () => {
               rows="4"
               value={formData.message}
               onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
+              className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-200"
               required
             />
           </div>
@@ -112,7 +116,7 @@ const GetStartedForm = () => {
       </div>
 
       {/* Bottom Wavy SVG */}
-      <div className="absolute bottom-0 left-0 w-full">
+      <div className="absolute bottom-0 left-0 w-full z-0">
         <svg
           className="w-full"
           viewBox="0 0 1440 320"
@@ -126,9 +130,7 @@ const GetStartedForm = () => {
         </svg>
       </div>
     </div>
-   </>
   );
 };
 
 export default GetStartedForm;
-//   <img src={Logo} alt="Logo" className="mx-auto mb-4 w-32" />
