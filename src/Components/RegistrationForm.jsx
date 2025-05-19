@@ -25,7 +25,7 @@ const GetStartedForm = () => {
 
   return (
    <>
-   <img src={Logo} alt="Logo" className="relative bottom-20" />
+   {/* <img src={Logo} alt="Logo" className="relative bottom-20 h-20 " /> */}
     <div className="relative min-h-screen bg-white flex items-center justify-center overflow-hidden px-4 py-8">
       
       {/* Form Container */}
