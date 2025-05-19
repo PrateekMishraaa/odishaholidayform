@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from "../assets/logo.jpg";
 import Image from "../assets/jagannath.png";
-
+import { BsWhatsapp } from "react-icons/bs";
 const GetStartedForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,6 +25,7 @@ const GetStartedForm = () => {
   };
 
   return (
+    <>
     <div
       className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden"
     //   style={{ backgroundImage: `url(${Image})` }}
@@ -35,12 +36,18 @@ const GetStartedForm = () => {
       {/* Fixed Logo at Top Center */}
      {/* Fixed Logo at Top Center */}
 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-  <img src={Logo} alt="Logo" className="h-32 sm:h-24 object-contain" />
+  <img src={Logo} alt="Logo" className="h-32 sm:h-20 object-contain" />
 </div>
+
+
 
 
       {/* Form Container */}
       <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
+        
+            <p className="text-center text-gray-700 font-medium text-sm mb-4">
+    Get Exclusive Offers! Complete the form and we’ll connect with you shortly.
+  </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -133,8 +140,21 @@ const GetStartedForm = () => {
             d="M0,160L60,144C120,128,240,96,360,117.3C480,139,600,213,720,240C840,267,960,245,1080,208C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
           />
         </svg>
+  
       </div>
     </div>
+ <div className="fixed bottom-6 left-10 z-30">
+  <a
+    href="https://wa.me/919540802061" // Replace with your WhatsApp number
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white p-1 rounded-full shadow-lg hover:shadow-xl transition"
+  >
+    <BsWhatsapp className="text-4xl text-green-600" />
+  </a>
+</div>
+
+    </>
   );
 };
 
