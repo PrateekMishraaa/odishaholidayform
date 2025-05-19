@@ -1,10 +1,14 @@
 import React from 'react'
 import RegistrationForm from './Components/RegistrationForm'
-
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 const App = () => {
   return (
  <>
- <RegistrationForm/>
+  <Router>
+    <Routes>
+      <Route path='/' element={<RegistrationForm/>}/>
+    </Routes>
+  </Router>
  </>
   )
 }
