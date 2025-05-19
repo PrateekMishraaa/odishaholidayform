@@ -34,7 +34,7 @@ const GetStartedForm = () => {
     }
 
     try {
-      const response = await axios.post("https://odishaformbackend-1.onrender.com/api/contact", formData, {
+      const response = await axios.post("https://odishaformbackend-1.onrender.com/contact", formData, {
         headers: { "Content-Type": "application/json" },
       });
 
