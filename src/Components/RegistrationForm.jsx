@@ -33,9 +33,11 @@ const GetStartedForm = () => {
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
 
       {/* Fixed Logo at Top Center */}
-      <div className="absolute top-4 h-24 left-1/2 transform -translate-x-1/2 z-20">
-        <img src={Logo} alt="Logo" className="w-24 sm:w-32" />
-      </div>
+     {/* Fixed Logo at Top Center */}
+<div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
+  <img src={Logo} alt="Logo" className="h-32 sm:h-18 object-contain" />
+</div>
+
 
       {/* Form Container */}
       <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
