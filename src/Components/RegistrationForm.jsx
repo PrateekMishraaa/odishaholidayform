@@ -27,15 +27,18 @@ const GetStartedForm = () => {
   return (
     <div
       className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden"
-      style={{ backgroundImage: `url(${Image})` }}
+    //   style={{ backgroundImage: `url(${Image})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
 
-      {/* Form Container */}
-      <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2">
-        <img src={Logo} alt="Logo" className="mx-auto mb-4 w-32" />
+      {/* Fixed Logo at Top Center */}
+      <div className="absolute top-4 h-24 left-1/2 transform -translate-x-1/2 z-20">
+        <img src={Logo} alt="Logo" className="w-24 sm:w-32" />
+      </div>
 
+      {/* Form Container */}
+      <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
