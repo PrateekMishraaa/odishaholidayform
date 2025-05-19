@@ -34,7 +34,7 @@ console.log(handleChange)
   }
 
   try {
-    await axios.post("http://localhost:5000/api/contact", formData, {
+    await axios.post("https://odishaformbackend-1.onrender.com/contact", formData, {
       headers: {
         "Content-Type": "application/json",
       },
