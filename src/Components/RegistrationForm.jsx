@@ -34,7 +34,7 @@ console.log(handleChange)
   }
 
   try {
-    await axios.post("https://odishaformbackend-1.onrender.com/contact", formData, {
+    await axios.post("https://odishaformbackend-1.onrender.com/", formData, {
       headers: {
         "Content-Type": "application/json",
       },
