@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from "../assets/logo.jpg";
-import Image from "../assets/jagannath.png"; // background image
+import Image from "../assets/jagannath.png";
 
 const GetStartedForm = () => {
   const [formData, setFormData] = useState({
@@ -26,14 +26,14 @@ const GetStartedForm = () => {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative px-4 py-8"
+      className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden"
       style={{ backgroundImage: `url(${Image})` }}
     >
-      {/* Overlay to slightly darken background */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
 
       {/* Form Container */}
-      <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-8 relative">
+      <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2">
         <img src={Logo} alt="Logo" className="mx-auto mb-4 w-32" />
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -115,7 +115,7 @@ const GetStartedForm = () => {
         </form>
       </div>
 
-      {/* Bottom Wavy SVG */}
+      {/* Wavy SVG */}
       <div className="absolute bottom-0 left-0 w-full z-0">
         <svg
           className="w-full"
