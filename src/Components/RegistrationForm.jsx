@@ -174,16 +174,29 @@ const GetStartedForm = () => {
         </div>
       )}
 
-      <div className="fixed bottom-2 z-30 right-10">
-        <a href="https://wa.me/918527694333" target="_blank" rel="noopener noreferrer" className=" p-2 rounded-full shadow-lg hover:shadow-xl transition">
-          <BsWhatsapp className="text-4xl text-green-600" />
-        </a>
-      </div>
-         <div className="fixed bottom-2 z-30 left-8">
-        <a href="tel:91-8527694333" target="_blank" rel="noopener noreferrer" className=" p-2 rounded-full shadow-lg hover:shadow-xl transition">
-          <IoMdCall className="text-4xl text-orange-600" />
-        </a>
-      </div>
+    <div className="fixed bottom-2 z-30 right-4 sm:right-6 md:right-10">
+  <a
+    href="https://wa.me/918527694333"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-full shadow-lg hover:shadow-xl transition"
+  >
+    <BsWhatsapp className="text-3xl sm:text-4xl md:text-5xl text-green-600" />
+  </a>
+</div>
+
+<div className="fixed bottom-2 z-30 left-4 sm:left-6 md:left-8">
+  <a
+    href="tel:91-8527694333"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-full shadow-lg hover:shadow-xl transition"
+  >
+    <IoMdCall className="text-3xl sm:text-4xl md:text-5xl text-orange-600" />
+  </a>
+</div>
+
+        
 
       <ToastContainer />
     </>
