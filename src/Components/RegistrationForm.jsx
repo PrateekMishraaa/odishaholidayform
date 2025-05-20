@@ -74,7 +74,9 @@ const GetStartedForm = () => {
   return (
     <>
       {loader ? (
-        <Loader />
+        <div className="flex items-center justify-center min-h-screen bg-white">
+          <Loader />
+        </div>
       ) : (
         <div className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
@@ -84,7 +86,7 @@ const GetStartedForm = () => {
           </div>
 
           <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
-            <p className='text-3xl font-semibold font-sans mb-10 text-center text-gray-600 '>Query form</p>
+            <p className='text-3xl font-semibold font-sans mb-10 text-center text-gray-600'>Query form</p>
             <p className="text-center text-gray-700 font-medium text-sm mb-4">
               Get Exclusive Offers! Complete the form and we’ll connect with you shortly.
             </p>
