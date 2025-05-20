@@ -86,7 +86,7 @@ const GetStartedForm = () => {
           </div>
 
           <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
-            <p className='text-3xl font-semibold font-sans mb-10 text-center text-gray-600'>Query form</p>
+            <p className='text-2xl cursor-pointer hover:text-orange-700 transition font-semibold font-sans mb-10 text-center text-orange-600'>Sign up and let the savings begin!</p>
             <p className="text-center text-gray-700 font-medium text-sm mb-4">
               Get Exclusive Offers! Complete the form and we’ll connect with you shortly.
             </p>
