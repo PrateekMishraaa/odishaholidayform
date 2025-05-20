@@ -5,7 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import Loader from './Loader';
-import { PiPhoneCallFill } from "react-icons/pi";
+import { IoMdCall } from "react-icons/io";
+
 
 const GetStartedForm = () => {
   const [loader, setLoader] = useState(false);
@@ -87,7 +88,7 @@ const GetStartedForm = () => {
           </div>
 
           <div className="z-10 w-full max-w-md bg-white rounded-2xl shadow-lg p-6 sm:p-8 mx-2 mt-28">
-            <p className='text-2xl cursor-pointer hover:text-orange-700 transition font-semibold font-sans mb-10 text-center text-orange-600'>Sign-Up For Amazing Deals!</p>
+            <p className='text-3xl cursor-pointer hover:text-orange-700 transition font-semibold font-sans mb-10 text-center text-orange-600'>Sign-Up For Amazing Deals!</p>
             <p className="text-center text-gray-700 font-medium text-sm mb-4">
               Get Exclusive Offers! Complete the form and we’ll connect with you shortly.
             </p>
@@ -173,14 +174,14 @@ const GetStartedForm = () => {
         </div>
       )}
 
-      <div className="fixed bottom-2 z-30 right-2">
-        <a href="https://wa.me/918527694333" target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full shadow-lg hover:shadow-xl transition">
+      <div className="fixed bottom-2 z-30 right-10">
+        <a href="https://wa.me/918527694333" target="_blank" rel="noopener noreferrer" className=" p-2 rounded-full shadow-lg hover:shadow-xl transition">
           <BsWhatsapp className="text-4xl text-green-600" />
         </a>
       </div>
-         <div className="fixed bottom-2 z-30 left-0">
-        <a href="tel:91-8527694333" target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded-full shadow-lg hover:shadow-xl transition">
-          <PiPhoneCallFill className="text-4xl text-green-600" />
+         <div className="fixed bottom-2 z-30 left-8">
+        <a href="tel:91-8527694333" target="_blank" rel="noopener noreferrer" className=" p-2 rounded-full shadow-lg hover:shadow-xl transition">
+          <IoMdCall className="text-4xl text-orange-600" />
         </a>
       </div>
 
